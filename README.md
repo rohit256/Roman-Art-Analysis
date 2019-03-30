@@ -46,24 +46,19 @@ To run: python simpleAnnotationTool.py Path-to-the-directory-containing-images P
 
 The parameter file should look like:
 
-key1 tag1 
-key2 tag2 ...
+key1 tag1 <br />
+key2 tag2 ... <br />
 
-e.g.
+e.g.<br />
+1 male<br /> 
+2 female<br /> 
+3 notSure<br />
 
-1 male 
-2 female 
-3 notSure
-
-The keys can be simple characters on the key board like 0,1,2,a,b,c, but q can not be used.
-
-Press key to annotate (map from keys to tags is in the parameter file)
-
-press space to skip current image
-
-The annotation file will be stored in the same directory with the images
-
-Press q to quit
+* The keys can be simple characters on the key board like 0,1,2,a,b,c, but q can not be used.
+* Press key to annotate (map from keys to tags is in the parameter file)
+* Press space to skip current image
+* The annotation file will be stored in the same directory with the images
+* Press q to quit
 
 ## Roman Statue Face Pre-process Pipeline and Face Frontalization
 
@@ -74,11 +69,11 @@ Extract the face from the image and frontallize the face(convert any profile vie
 
 There are 2 modes in /ML4RomeArt/facePrepPipeline
 
-For face extraction : mode=0
+* For face extraction : mode=0
 
 python facePrepPipeline.py  'path_to shape_predictor_68_face_landmarks.dat' 'path_to_dataset'
 
-For face Frontalization : mode =1
+* For face Frontalization : mode =1
 
 python facePrepPipeline.py  'path_to shape_predictor_68_face_landmarks.dat' 'path_to_face_extracted_dataset'
 
@@ -97,7 +92,7 @@ The 2-d array would look like:
    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0  0  0  0  0  1  3  4  5  7 10 11 12  9 11 14 10 14 16 16 17 19 16
   21 21 17 19 17 14 15 14 11 11  7  5  0  0  0  0  0  0  0  2  0  0  1  0
-   1  0  3  0  0  0  3  0  0  0  0  0  3  3  4  6  2  2  2  2]
+   1  0  3  0  0  0  3  0  0  0  0  0  3  3  4  6  2  2  2  2]<br />
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0
    0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1
@@ -112,10 +107,10 @@ Just run /forehead_wrinkle_detector/Run.ipynb
 
 #### Work reference
 
-Some part of the work done(Data Collection and Annotation) has been taken from 'https://github.com/RedHenLab/RomanArtAnalysis'. This was the work done during 2016 Gsoc for Red hen on Roman Art Analysis. The codes were written in Python 2.7, so i made some changes and minor bug fixes to reproduce the code in python3. Some minor changes were :
- urllib
- unicode,str errors
- inserting into file etc.
+Some part of the work done(Data Collection and Annotation) has been taken from 'https://github.com/RedHenLab/RomanArtAnalysis'. This was the work done during 2016 Gsoc for Red hen on Roman Art Analysis. The codes were written in Python 2.7, so i made some changes and minor bug fixes to reproduce the code in python3. Some minor changes were :<br />
+ * urllib<br />
+ * unicode,str errors<br />
+ * inserting into file etc.
 
  
 
