@@ -22,7 +22,7 @@ The HTMLParser and state machine is used for parsing the webpages of the databas
 
 #### Related Code:
 
--> Data_collection/downloader4MCLcamacuk.py: parsing the webpage 'http://museum.classics.cam.ac.uk/collections/casts' and download the images.
+/Data_collection/downloader4MCLcamacuk.py: parsing the webpage 'http://museum.classics.cam.ac.uk/collections/casts' and download the images.
 The dataset made can be seen in /dataset 
 
 #### Deployment instructions:
