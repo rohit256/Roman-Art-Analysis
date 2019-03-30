@@ -11,7 +11,9 @@ This project contains parts as follow:
 
 4. face frontalization
 
-5. Wrinkle analysis on forehead using Soft computing and algorithms
+5. Data Augmentation
+
+6. Wrinkle analysis on forehead using Soft computing and algorithms
 
 
 ## Webpage Parsers for data Collectiion from Art Databases
@@ -80,8 +82,33 @@ For face Frontalization : mode =1
 
 python facePrepPipeline.py  'path_to shape_predictor_68_face_landmarks.dat' 'path_to_face_extracted_dataset'
 
+## Data Augmentation
 
+For better training of the models, it is very important to augment the data. For data augmentation, i have performed rescaling and rotation of image currently. The code for this is /ImageAugmentation.ipynb on /RawImages
+
+## Wrinkle analysis on forehead
+
+Wrinkle analysis on forehead is done on an already annotated dataset present in /forehead_wrinkle_detector/unwrinkled/ and /forehead_wrinkle_detector/wrinkled. I used OpenCV tool Laplacian to:
 ![alt text](https://github.com/rohit256/Roman-Art-Analysis/blob/master/image.png)
+
+The 2-d array would look like:
+
+[ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+   0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+   0  0  0  0  0  0  1  3  4  5  7 10 11 12  9 11 14 10 14 16 16 17 19 16
+  21 21 17 19 17 14 15 14 11 11  7  5  0  0  0  0  0  0  0  2  0  0  1  0
+   1  0  3  0  0  0  3  0  0  0  0  0  3  3  4  6  2  2  2  2]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0
+   0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+   0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1
+   0  3  7  6 10 16 20 23 23 20 14 10  6  7  2  3  3  4  0  0  3  4  1  4
+   1  4  0  1  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0]
+
+Where higher values are for white lines (presence of wrinkle). Now, I have written a very basic algorithm to detect the presence of a line from this 2-d array. Even on applying this basic algorithm, the accuracy of classification was 94% on 100 images tested(50 wrinkled and 50 unwrinkled). A better algorithm can be applied.
+
+#### Deployment instructions
+
+Just run /forehead_wrinkle_detector/Run.ipynb
 
 #### Work reference
 
