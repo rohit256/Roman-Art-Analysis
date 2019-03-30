@@ -18,25 +18,27 @@ This project contains parts as follow:
 
 The HTMLParser and state machine is used for parsing the webpages of the databases and downloading images and meta-data.
 
-### Related Code:
+#### Related Code:
 
 -> Data_collection/downloader4MCLcamacuk.py: parsing the webpage 'http://museum.classics.cam.ac.uk/collections/casts' and download the images.
 The dataset made can be seen in /dataset 
 
-### Deployment instructions:
+#### Deployment instructions:
 
 Go to Data collection and run : python downloader4MCLcamacuk.py Path_to_save_data Page_begin Page_end
 
 Extracts data from page 'Page_begin' to 'Page_end'
 /dataset contains data from page 1 to page 3
 
-## Simple Annotator for Roman Statue Images An OpenCV high-gui based simple image annotation tool. This tool is used to annotate a set of images with a variable. The possible value of the variable can be two or more. The annotation results will be stored in a text file.
+## Simple Annotator for Roman Statue Images
 
-### Related Code:
+An OpenCV high-gui based simple image annotation tool. This tool is used to annotate a set of images with a variable. The possible value of the variable can be two or more. The annotation results will be stored in a text file.
+
+#### Related Code:
 
 Data_collection/simpleAnnotationTool.py
 
-### Deployment instructions
+#### Deployment instructions
 
 To run: python simpleAnnotationTool.py Path-to-the-directory-containing-images Path-to-the-parameter-file
 
@@ -65,7 +67,7 @@ Press q to quit
 
 Extract the face from the image and frontallize the face(convert any profile view to front view)
 
-### Deployment instructions
+#### Deployment instructions
 
 
 There are 2 modes in /ML4RomeArt/facePrepPipeline
@@ -79,7 +81,7 @@ For face Frontalization : mode =1
 python facePrepPipeline.py  'path_to shape_predictor_68_face_landmarks.dat' 'path_to_face_extracted_dataset'
 
 
-
+#### Work reference
 
 Some part of the work done(Data Collection and Annotation) has been taken from 'https://github.com/RedHenLab/RomanArtAnalysis'. This was the work done during 2016 Gsoc for Red hen on Roman Art Analysis. The codes were written in Python 2.7, so i made some changes and minor bug fixes to reproduce the code in python3. Some minor changes were -> urllib -> unicode,str errors -> inserting into file.
 
