@@ -81,9 +81,14 @@ For face Frontalization : mode =1
 python facePrepPipeline.py  'path_to shape_predictor_68_face_landmarks.dat' 'path_to_face_extracted_dataset'
 
 
+![alt text](https://github.com/rohit256/Roman-Art-Analysis/blob/master/image.png)
+
 #### Work reference
 
-Some part of the work done(Data Collection and Annotation) has been taken from 'https://github.com/RedHenLab/RomanArtAnalysis'. This was the work done during 2016 Gsoc for Red hen on Roman Art Analysis. The codes were written in Python 2.7, so i made some changes and minor bug fixes to reproduce the code in python3. Some minor changes were -> urllib -> unicode,str errors -> inserting into file.
+Some part of the work done(Data Collection and Annotation) has been taken from 'https://github.com/RedHenLab/RomanArtAnalysis'. This was the work done during 2016 Gsoc for Red hen on Roman Art Analysis. The codes were written in Python 2.7, so i made some changes and minor bug fixes to reproduce the code in python3. Some minor changes were :
+ urllib
+ unicode,str errors
+ inserting into file etc.
 
  
 
