@@ -113,7 +113,8 @@ Some part of the work done(Data Collection and Annotation) has been taken from '
  * inserting into file etc.
 <br />
 Wrinkled and unwrinkled dataset and wrinkle analysis code has reference from https://github.com/fatchur/Analysis-of-facial-wrinkles
-
+<br />
+Data augmentation reference : https://medium.com/ymedialabs-innovation/data-augmentation-techniques-in-cnn-using-tensorflow-371ae43d5be9
  
 
 
